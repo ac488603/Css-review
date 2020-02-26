@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Box Model Margin & Padding</title>
+        <style>
+            /*CSS Reset*/
+            /*border-box property includes padding in width without 
+                the property the width only includes inner element*/
+            *{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+            }
+            .box{
+                background: #f4f4f4;
+                border: 2px #777 solid;
+
+                width: 500px;
+                padding: 20px;
+
+                margin:20px;
+
+                
+                /*padding shorthand = top right bottom left */
+                padding: 10px 20px 10px 20px;
+
+                /*padding shorthand = top/bottom left/right*/
+                padding: 10px 20px;
+
+                /*padding on all sides*/
+                
+                padding: 20px;
+
+                /*all of the shorthand notations above work for both the maring and padding*/
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="box-1" class="box">
+            <h3>box one</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolorum quasi incidunt enim quidem, quod dolor
+                ab quaerat error odio dicta aliquid natus accusantium pariatur vel id sed minus reiciendis.</p>
+        </div>
+        <div id="box-2" class="box">
+            <h3>box two</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolorum quasi incidunt enim quidem, quod dolor
+                ab quaerat error odio dicta aliquid natus accusantium pariatur vel id sed minus reiciendis.</p>
+        </div>
+        <div id="box-3" class="box">
+            <h3>box three</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolorum quasi incidunt enim quidem, quod dolor
+                ab quaerat error odio dicta aliquid natus accusantium pariatur vel id sed minus reiciendis.</p>
+        </div>
+        <div id="box-4" class="box">
+            <h3>box four</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolorum quasi incidunt enim quidem, quod dolor
+                ab quaerat error odio dicta aliquid natus accusantium pariatur vel id sed minus reiciendis.</p>
+        </div>
+    </body>
+
+</html>
